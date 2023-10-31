@@ -15,7 +15,7 @@ import mugImage from "../../../images/homepage/mug.svg";
 export default function HeroSection() {
 
   return (
-    <div className="hero-section-wrapper relative">
+    <div className="hero-section-wrapper relative" id="hero-section">
       <div className="hero-section-header relative mx-auto container">
         <Heading
           emoji={HiOutlineEmojiHappy}

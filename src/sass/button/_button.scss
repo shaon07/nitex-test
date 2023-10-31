@@ -84,7 +84,6 @@
   color: $white;
   @include btn-gd;
   transition: all 1s linear;
-  background-image: auto !important;
 
   &:hover {
     @include btn-gd2;

@@ -1,3 +1,4 @@
+import PublicHeader from 'components/PublicHeader';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'swiper/css';
@@ -9,6 +10,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <PublicHeader />
     <App />
   </React.StrictMode>
 );

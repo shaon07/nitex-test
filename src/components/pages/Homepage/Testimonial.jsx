@@ -22,7 +22,7 @@ export default function Testimonial() {
   const { inView, ref } = useIsView();
 
   return (
-    <div className="testimonial-wrapper">
+    <div className="testimonial-wrapper" id="testimonial">
       <Row className="testimonial-row-one">
         <Col xs={20} className="testimonial-text-one">
           <div className="testimonial-text">

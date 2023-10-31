@@ -17,7 +17,7 @@ export default function OurFeature() {
   const { inView: cardView4, ref: cardRef4 } = useIsView();
 
   return (
-    <div className="our-feature-wrapper" ref={ref}>
+    <div className="our-feature-wrapper" ref={ref} id="feature">
       <Heading
         emoji={AiOutlineHeart}
         title="Our Features"
