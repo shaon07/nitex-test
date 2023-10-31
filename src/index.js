@@ -1,3 +1,4 @@
+import PublicFooter from 'components/PublicFooter';
 import PublicHeader from 'components/PublicHeader';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -12,6 +13,7 @@ root.render(
   <React.StrictMode>
     <PublicHeader />
     <App />
+    <PublicFooter />
   </React.StrictMode>
 );
 
