@@ -1,0 +1,20 @@
+<svg width="154" height="16" viewBox="0 0 154 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="154" height="16" rx="4" fill="#4094FF"/>
+<mask id="mask0_2613_96977" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="154" height="16">
+<rect width="154" height="16" rx="4" fill="#4094FF"/>
+</mask>
+<g mask="url(#mask0_2613_96977)">
+<path opacity="0.22" d="M6.67254 16H0L6.67254 0H13.3333L6.67254 16Z" fill="white"/>
+<path opacity="0.22" d="M20.0059 16H13.3333L20.0059 0H26.6667L20.0059 16Z" fill="white"/>
+<path opacity="0.22" d="M33.3392 16H26.6667L33.3392 0H40L33.3392 16Z" fill="white"/>
+<path opacity="0.22" d="M46.6725 16H40L46.6725 0H53.3333L46.6725 16Z" fill="white"/>
+<path opacity="0.22" d="M60.0059 16H53.3333L60.0059 0H66.6667L60.0059 16Z" fill="white"/>
+<path opacity="0.22" d="M73.3392 16H66.6667L73.3392 0H80L73.3392 16Z" fill="white"/>
+<path opacity="0.22" d="M86.6725 16H80L86.6725 0H93.3333L86.6725 16Z" fill="white"/>
+<path opacity="0.22" d="M100.006 16H93.3333L100.006 0H106.667L100.006 16Z" fill="white"/>
+<path opacity="0.22" d="M113.339 16H106.667L113.339 0H120L113.339 16Z" fill="white"/>
+<path opacity="0.22" d="M126.673 16H120L126.673 0H133.333L126.673 16Z" fill="white"/>
+<path opacity="0.22" d="M140.006 16H133.333L140.006 0H146.667L140.006 16Z" fill="white"/>
+<path opacity="0.22" d="M153.339 16H146.667L153.339 0H160L153.339 16Z" fill="white"/>
+</g>
+</svg>

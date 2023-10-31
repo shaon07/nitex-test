@@ -1,0 +1,32 @@
+@import "../mixin/mixin";
+
+.why-choose-us-wrapper {
+  color: $white;
+  padding: 2rem 0;
+
+  .lines {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    margin: -10px calc(-50vw + 50%);
+    z-index: -1;
+  }
+
+  .cards {
+    max-width: 576px;
+    margin: 0 auto;
+    min-height: 22rem;
+  }
+
+  p {
+    text-align: center;
+    color: $link-white;
+    font-size: 16px;
+  }
+
+  h5 {
+    color: $white;
+    font-weight: 700;
+  }
+}

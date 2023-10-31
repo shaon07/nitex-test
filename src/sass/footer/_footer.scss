@@ -1,0 +1,303 @@
+.footer-fluid {
+  position: relative;
+  background-color: $primary-dark;
+  color: $link-white;
+  padding: 2rem 0;
+  overflow-y: hidden;
+  border-top: 1px solid transparent;
+  border-image: url("/images/line.png") 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: 46%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 60%;
+    @include blurShadow;
+    width: 60%;
+    z-index: 1;
+  }
+
+  .footer-wrapper {
+    z-index: 2;
+    position: relative;
+    .footer-logo {
+      width: 150px;
+      display: block;
+      padding-bottom: 1.5rem;
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .footer-info-text {
+      @include flexbox(flex-start, center, 8px);
+      margin-bottom: 0.8rem;
+
+      span {
+        font-size: 18px;
+        line-height: 0;
+
+        a {
+          color: $link-white;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .footer-social {
+      margin: 1rem 0;
+      display: inline-block;
+      color: $white;
+      .footer-social-icon {
+        @include flexbox(space-between, center, 15px);
+        font-size: 22px;
+        cursor: pointer;
+      }
+    }
+
+    .footer-menu {
+      @include flexbox(space-between, flex-start, 10px);
+      flex-direction: column;
+      margin-top: 20px;
+      a {
+        color: $link-white;
+      }
+    }
+
+    .footer-right {
+      @include flexbox(flex-start, flex-start, 30px);
+      color: $white;
+      flex-direction: column;
+
+      .h6 {
+        line-height: 18px;
+        font-size: 14px;
+        color: $white;
+        font-weight: 500;
+      }
+      .payment-options {
+        @include flexbox(flex-start, space-between, 10px);
+        flex-direction: column;
+
+        li {
+          border-radius: 100px;
+        }
+
+        .cardBD {
+          background: linear-gradient(180deg, #42b8fe 0%, #207cfe 100%);
+          border-radius: 16px;
+          width: 200px;
+          height: auto;
+          padding: 8px 20px;
+          cursor: pointer;
+
+          a {
+            color: $white;
+          }
+
+          .text-BD {
+            text-align: right;
+            font-size: 42px;
+            color: $link-white;
+            font-weight: bold;
+            opacity: 0.5;
+
+            p {
+              color: $link-white;
+              display: inline;
+            }
+          }
+
+          p {
+            color: $link-white;
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+            margin-bottom: 5px;
+          }
+
+          .text-deposit {
+            font-size: 20px;
+
+            b {
+              color: $white !important;
+            }
+          }
+        }
+
+        .cardBet {
+          width: 200px;
+          background: url("/images/footer/cardbg.svg") no-repeat;
+          background-size: cover;
+          background-position: top center;
+          padding: 16px 20px;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 8px;
+          border-radius: 5px;
+          cursor: pointer;
+
+          .bit-image {
+            width: 50px !important;
+            height: 50px;
+            margin-left: auto;
+          }
+
+          .bit-icon {
+            display: flex;
+            justify-content: flex-start;
+
+            img {
+              width: 60px !important;
+              height: 20px !important;
+            }
+          }
+
+          a {
+            color: $white;
+          }
+
+          p {
+            margin: 0;
+            padding: 0;
+            color: $link-white;
+          }
+
+          h6 {
+            font-size: 20px;
+            margin: 0;
+            letter-spacing: 2px;
+
+            b {
+              color: $orange;
+            }
+          }
+        }
+      }
+
+      .apps-info {
+        @extend .payment-options;
+        padding-bottom: 1rem;
+
+        .app-card {
+          @include flexbox(flex-start, flex-start, 20px);
+          flex-wrap: wrap;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .footer-policy-info {
+      @include flexbox(space-between, center, 0px);
+      border-top: 1px solid transparent;
+      border-image: url("/images/line.png") 1;
+      padding-top: 30px;
+
+      .footer-policies {
+        @include flexbox(flex-start, flex-start, 30px);
+
+        a {
+          color: $link-white;
+          font-weight: normal;
+          font-size: 12px;
+        }
+      }
+
+      .copyright {
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        cursor: pointer;
+        text-align: right;
+
+        a {
+          color: $link-white;
+          font-weight: normal;
+        }
+      }
+    }
+
+    .footer-list {
+      .h6 {
+        line-height: 18px;
+        font-size: 14px;
+        color: $link-white;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-policy-info {
+    margin-top: 1rem;
+    .footer-policies {
+      justify-content: center !important;
+    }
+    .footer-copyright-wrapper {
+      p {
+        text-align: center !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-fluid {
+    .footer-wrapper {
+      .footer-right {
+        .apps-info {
+          width: 100%;
+
+          .app-card {
+            flex-wrap: nowrap;
+            gap: 10px;
+
+            .cardBD {
+              width: 100%;
+            }
+
+            .cardBet {
+              width: 100%;
+            }
+
+            .text-deposit {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .footer-policy-info {
+        display: flex;
+        .footer-policies {
+          flex-wrap: wrap;
+          gap: 10px;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .footer-list {
+    .bit-apps {
+      svg {
+        width: 100%;
+      }
+    }
+  }
+}

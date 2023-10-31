@@ -1,0 +1,146 @@
+@import "../mixin/mixin";
+
+.hero-section-wrapper {
+  padding: 4rem 0 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("/images/homepage/full-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+
+  .hero-section-header {
+    color: $white;
+    width: 80%;
+
+    .hero-coin {
+      top: 120px;
+      left: -100px;
+
+      img {
+        position: relative;
+        z-index: 1;
+      }
+      .coin-shadow {
+        position: absolute;
+        left: 0;
+        top: 1.2rem;
+        transform: scale(2);
+        z-index: -1;
+      }
+    }
+
+    .hero-mug {
+      right: -50px;
+      bottom: 0;
+
+      img {
+        position: relative;
+        z-index: 1;
+      }
+      .mug-shadow {
+        position: absolute;
+        left: 0;
+        top: 1.2rem;
+        transform: scale(2);
+        z-index: -1;
+      }
+    }
+
+    p {
+      color: $link-white;
+      font-size: 1rem;
+      font-weight: normal;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      max-width: 650px;
+    }
+
+    .button-box {
+      margin: 20px 0;
+
+      .learn-btn {
+        border: 1px solid $white;
+      }
+    }
+  }
+
+  .dashboard-img-wrapper {
+    margin: 5rem auto;
+    background-color: transparent;
+
+    .merged-img {
+      max-width: 800px;
+
+      .dashboard-show-img {
+        margin-bottom: 10rem;
+        z-index: 1;
+      }
+
+      .bottom-img {
+        bottom: 0;
+        transform: scaleX(1.3);
+        z-index: -1;
+      }
+
+      .football-img {
+        top: 55%;
+        left: 0;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+      }
+
+      .coin-img {
+        top: -2rem;
+        left: 3rem;
+        z-index: 2;
+      }
+
+      .coin-blur-img {
+        top: 3rem;
+        right: -3rem;
+        z-index: 2;
+      }
+    }
+  }
+
+  .hero-counts {
+    color: $white;
+    padding: 4rem 0;
+    background: #0f142b;
+    box-shadow: 0 0 150px 150px $primary-dark;
+
+    .borderless {
+      border: 0 !important;
+    }
+
+    .hero-count-block {
+      border-left: 1px solid transparent;
+      border-image: url("/images/homepage/borderline.png") 10 round;
+
+      span {
+        font-size: 30px;
+      }
+
+      .count-info {
+        p {
+          padding: 0;
+          margin: 0;
+        }
+
+        .h3 {
+          line-height: 36px;
+        }
+      }
+    }
+  }
+}

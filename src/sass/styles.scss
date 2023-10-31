@@ -1,0 +1,21 @@
+@import "../sass/mixin/mixin";
+@import "../sass/variables/variables";
+@import "Typography/typography";
+@import "../sass/shareable";
+@import "../sass/animation/animations";
+
+// components classes
+@import "../sass/button/button";
+// @import "../sass/block_responsive";
+@import "../sass/header/header";
+@import "../sass/header/private-header";
+@import "../sass/footer/footer";
+@import "../sass/404/404";
+@import "../sass/shareable/spinner";
+// @import "../scss/shareable/languageselector";
+
+//page classes
+@import "../sass/homepage/homepage";
+
+@import "globals.scss";
+// @import "_responsive.scss";

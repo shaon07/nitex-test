@@ -1,0 +1,48 @@
+.not-found-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary-dark;
+  @include flexbox(center, center, 0);
+  flex-direction: column;
+
+  img {
+    height: auto;
+    object-fit: scale-down;
+    aspect-ratio: 1;
+  }
+
+  .info {
+    @include flexbox(center, center, 0);
+    flex-direction: column;
+    color: $white;
+    padding: 20px 0;
+
+    .p1 {
+      margin-bottom: 5px;
+      line-height: 20px;
+    }
+
+    .__small {
+      color: $white;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .not-found-wrapper {
+    height: 90vh;
+    flex-direction: column-reverse;
+    img {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .not-found-wrapper {
+    height: 90vh;
+    img {
+      width: 100%;
+    }
+  }
+}

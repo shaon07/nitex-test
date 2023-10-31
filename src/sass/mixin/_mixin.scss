@@ -1,0 +1,41 @@
+@mixin flexbox($justify, $align, $gap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin blurShadow {
+  background: $shadow;
+  filter: blur(120px);
+}
+
+@mixin boxShadow {
+  box-shadow: 0px 10px 24px -3px rgba(16, 24, 40, 0.1),
+    0px 4px 24px -4px rgba(16, 24, 40, 0.1);
+}
+
+@mixin typo($weight, $size, $line) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line;
+}
+
+@mixin btn-gd {
+  background: linear-gradient(180deg, #42b8fe 0%, #207cfe 100%);
+}
+@mixin btn-gd2 {
+  background: linear-gradient(180deg, #207cfe 0%, #42b8fe 100%);
+}
+
+@mixin gredientBorder {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+@mixin borderBottom {
+  border-bottom: 1px solid transparent;
+  border-image: url("/src/images/line.png") 10;
+}
