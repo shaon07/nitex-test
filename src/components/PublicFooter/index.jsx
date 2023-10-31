@@ -6,27 +6,11 @@ import tiktok from "../../images/icons/tiktok.svg";
 import twitter from "../../images/icons/twitter.svg";
 import youtube from "../../images/icons/youtube.svg";
 
-export const Services = [
-  "Affiliate",
-  "Agent",
-  "1xTransfer",
-  "Quizzes",
-  "Challenges",
-];
-export const Rewards = [
-  "Daily Login Bonus",
-  "Deposit Bonus",
-  "Winner List",
-];
+export const Services = ["Support", "FAQ", "Blog"];
+export const Rewards = ["Support", "FAQ", "Blog"];
 export const About = ["Support", "FAQ", "Blog"];
 
-export const paymentsOptions = [
-  "bkash",
-  "nagad",
-  "rocket",
-  "upay",
-  "city",
-];
+
 
 
 
