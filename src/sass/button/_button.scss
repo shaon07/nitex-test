@@ -21,85 +21,6 @@
   transition: all 0.5s linear;
 }
 
-.outlined {
-  background: transparent;
-  border: 1px solid $blue;
-  outline: none;
-  font-weight: 600;
-  color: $blue;
-}
-
-.gradient {
-  background: var(--grad-yellow-dark);
-  color: white;
-  border: 1px solid var(--grad-yellow-dark);
-  outline: none;
-  font-weight: bold;
-}
-
-.flat {
-  background: var(--primary);
-  color: white;
-  border: 1px solid var(--primary);
-  outline: none;
-  font-weight: bold;
-}
-
-.transparent {
-  color: white;
-  font-weight: bold;
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
-.Iconic {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(
-    94.55deg,
-    rgba(255, 255, 255, 0.36) 0%,
-    rgba(255, 255, 255, 0.24) 100%
-  ) !important;
-  backdrop-filter: blur(10px) !important;
-  border-radius: 10px;
-  font-weight: 500;
-  line-height: 100%;
-  color: var(--primaryLighterGreen);
-  border: none;
-  outline: none;
-
-  span {
-    background: yellow;
-    padding: 1px 4px;
-    border-radius: 2px;
-    color: grey;
-    line-height: 1;
-  }
-}
-
-.IconicDark {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  font-weight: 500;
-  line-height: 100%;
-  color: var(--primaryLighterGreen);
-  border: none;
-  outline: none;
-
-  span {
-    background: yellow;
-    padding: 1px 4px;
-    border-radius: 2px;
-    color: grey;
-    line-height: 1;
-  }
-}
-
 .rounded {
   border-radius: 50px !important;
 }
@@ -163,6 +84,7 @@
   color: $white;
   @include btn-gd;
   transition: all 1s linear;
+  background-image: auto !important;
 
   &:hover {
     @include btn-gd2;
@@ -208,122 +130,6 @@
   color: $white;
   border: 1px solid $gray;
   backdrop-filter: blur(8px);
-}
-
-.green {
-  padding: 8px 20px;
-  font-weight: 600;
-  border-radius: 8px;
-  border: 0;
-  color: $white;
-  transition: all 1s linear;
-
-  border-radius: 8px;
-  background: var(
-    --gradient-secondary-green,
-    linear-gradient(180deg, #97eb0e 0%, #19b90b 100%)
-  );
-
-  &:hover {
-    background: var(
-      --gradient-secondary-green,
-      linear-gradient(180deg, #97eb0e 0%, #19b90b 100%)
-    );
-    span {
-      transform: translateX(5px);
-    }
-  }
-
-  &:active {
-    background: var(
-      --gradient-secondary-green,
-      linear-gradient(180deg, #97eb0e 0%, #19b90b 100%)
-    );
-  }
-
-  span {
-    font-size: 24px;
-    padding: 0 0 2px 0;
-  }
-}
-
-.shadow-green {
-  box-shadow: 0px 18px 8px -8px rgba(118, 188, 4, 0.32);
-}
-
-.yellow {
-  padding: 8px 20px;
-  font-weight: 600;
-  border-radius: 8px;
-  border: 0;
-  color: $white;
-  transition: all 1s linear;
-
-  border-radius: 8px;
-  background: var(
-    --gradient-secondary-green,
-    linear-gradient(180deg, #ffc048 0%, #ffa808 100%)
-  );
-  box-shadow: 0px 6px 5px 0px rgba(255, 164, 60, 0.32);
-  // box-shadow: 0px 8px 8px -8px rgba(255, 164, 60, 0.32);
-
-  &:hover {
-    background: var(
-      --gradient-secondary-green,
-      linear-gradient(180deg, #ffc048 0%, #ffa808 100%)
-    );
-    span {
-      transform: translateX(5px);
-    }
-  }
-
-  &:active {
-    background: var(
-      --gradient-secondary-green,
-      linear-gradient(180deg, #ffc048 0%, #ffa808 100%)
-    );
-  }
-
-  span {
-    font-size: 24px;
-    padding: 0 0 2px 0;
-  }
-}
-
-.danger {
-  padding: 5px 20px;
-  font-weight: 600;
-  border-radius: 8px;
-  border: 0;
-  color: $white;
-  transition: all 1s linear;
-
-  border-radius: 8px;
-  background: white;
-  border: 2px solid red;
-  color: red;
-
-  &:hover {
-    // background: var(
-    //   --gradient-secondary-green,
-    //   linear-gradient(180deg, #ffc048 0%, #ffa808 100%)
-    // );
-    span {
-      transform: translateX(5px);
-    }
-  }
-
-  &:active {
-    // background: var(
-    //   --gradient-secondary-green,
-    //   linear-gradient(180deg, #ffc048 0%, #ffa808 100%)
-    // );
-  }
-
-  span {
-    font-size: 24px;
-    padding: 0 0 2px 0;
-  }
 }
 
 @media screen and (max-width: 768px) {

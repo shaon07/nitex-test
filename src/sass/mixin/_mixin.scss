@@ -22,7 +22,7 @@
 }
 
 @mixin btn-gd {
-  background: linear-gradient(180deg, #42b8fe 0%, #207cfe 100%);
+  background: linear-gradient(180deg, #42b8fe 0%, #207cfe 100%) !important;
 }
 @mixin btn-gd2 {
   background: linear-gradient(180deg, #207cfe 0%, #42b8fe 100%);
